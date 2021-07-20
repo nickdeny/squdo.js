@@ -1,2 +1,3 @@
 # squdo.js
-Squdo helps you to detect image formats your browser supports
+Squdo helps to detect what graphic formats your browser's <img> tag supports
+Try it now: https://nickdeny.github.io/squdo.js/
