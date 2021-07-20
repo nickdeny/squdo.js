@@ -72,7 +72,7 @@ window.addEventListener('load', function () {
 
 function processImage(image, callback) {
   var ImageNode = new Image()
-  ImageNode.src = '/images/1px' + image.format
+  ImageNode.src = 'images/1px' + image.format
 
   ImageNode.onload = function () {
     callback(!!ImageNode.height)
