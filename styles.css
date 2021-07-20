@@ -32,7 +32,7 @@ template {
   margin-left: auto;
 }
 
-.header {
+header {
   padding-top: 15px;
   padding-bottom: 30px;
   background-color: #f1f3f4;
@@ -52,18 +52,12 @@ template {
   letter-spacing: .15px;
 }
 
-.content {
+main {
   display: flex;
   flex-flow: column nowrap;
   flex: 1;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.footer {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #f1f3f4;
 }
 
 .spinner {
@@ -112,9 +106,9 @@ template {
 }
 
 .image-icon {
-  padding: 8px 16px;
-  min-width: 82px;
-  flex: 0 0 82px;
+  padding: 6px 12px;
+  min-width: 72px;
+  flex: 0 0 72px;
   font-weight: 700;
   letter-spacing: .42px;
   color: #ffffff;
@@ -128,6 +122,7 @@ template {
 }
 
 .image-name {
+  display: none;
   margin: 0;
   padding-left: 15px;
   font-size: 20px;
@@ -139,7 +134,19 @@ template {
   color: #aaaaaa;
   font-weight: 500;
   letter-spacing: .2px;
-  margin-left: 5px;
+  margin-left: 15px;
+}
+
+footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #f1f3f4;
+}
+
+.footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .copyright {
@@ -161,4 +168,25 @@ template {
 .copyright > img {
   display: block;
   height: 24px;
+}
+
+@media (min-width: 576px) {
+  .image-icon {
+    padding: 8px 16px;
+    min-width: 82px;
+    flex: 0 0 82px;
+  }
+
+  .image-name {
+    display: inline;
+  }
+
+  .image-label {
+    margin-left: 5px;
+  }
+
+  .footer {
+    justify-content: flex-start;
+    text-align: left;
+  }
 }
